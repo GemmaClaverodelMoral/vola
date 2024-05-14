@@ -1,6 +1,7 @@
-# Volá - React-Vite-TailwindCss - 
-## [eCommece Practice](https://gemmaclaverodelmoral.github.io/vola/) - Proyecto ecommerce con React / Vite / TailwindCss
-## Simulacion de eCommerce con algunas características de tiendas online usando React, Vite y TailwanCSS
+# Volá
+Products Catalog - VolaFlyWear
+## [eCommece Practice](https://gemmaclaverodelmoral.github.io/vola/) - Proyecto de prueba de funcionalidades de ecommerce usando React / Vite / TailwindCss. Simulacion parcial de presentacion de Catalogo de productos con algunas características de tiendas online como CheckOut, Account management, Sign In
+Usando React, Vite y TailwanCSS
 
 ## ¿Que contiene este proyecto?
 -	Acceso a base de datos FireStore
@@ -51,5 +52,3 @@
 - OJO: Falta desarrollar enlace a whapp con font awesome: npm install @fortawesome/fontawesome-free
 - OJO: No esta desarrollado: Crear el carrito de compras SideMenu
 - OJO: Los componentes de ShowProduct y CheckOut estan pisando el Grid en viewports de pocos pixeles.
-
-
