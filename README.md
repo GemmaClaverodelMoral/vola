@@ -48,6 +48,7 @@
 - OJO: Quiero que si pongo una lo¿upa en la foto se vea bastante grande con una lupa dentro de su cuadrito
 - OJO: Quiero cambiar a una base de datos mas comoda que se pueda exportar y demas
 - OJO: Falta desarrollar enlace a whapp con font awesome: npm install @fortawesome/fontawesome-free
--  OJO: No esta desarrollado: Crear el carrito de compras SideMenu
+- OJO: No esta desarrollado: Crear el carrito de compras SideMenu
+- OJO: Los componentes de ShowProduct y CheckOut estan pisando el Grid en viewports de pocos pixeles.
 
 
