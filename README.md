@@ -28,23 +28,30 @@ Usando React, Vite y TailwanCSS
 - navegador principal con dos hijos derecho y izquierdo
 - uso de navlink - ya no funciona isActives y demas.... cuidado. Ahora se hace con useLocation:     import { NavLink, useLocation } from 'react-router-dom'
 - uso de Layout
+## 04- Implementacion de Cards con diferentes renders segun si son Cards de producto o de mennu
 - desarrollo de cards con componentes dinamicos
 - uso asincronico de base de datos de FireStore
-- uso de iconos importados como componentes desde heroicons: npm install @heroicons/react
-- uso de context para pasar la informacion de 1 componente a otrp: Por ejemplo: Del componente cart al componente Cart detail
 - Implementación de Visualizacion de detalle de producto con componentes
+- Implementacion de Cards de Menu para acceso a filtro rapido
+## 05 - Importacion de heroIcons
+- uso de iconos importados como componentes desde heroicons: npm install @heroicons/react
+- uso de context para pasar la informacion de 1 componente a otro: Por ejemplo: Del componente cart al showDetail
+## 06 - Implementacion de CheckOut y Resumen de Ordenes de Compra 
 - Implementacion de Checkout con componentes: Implementacion de Orden de compra y de lista de ordenes de compra
     - Guardar el producto seleccionado en un estado global con aperturas y cierres de componentes (show producto & chekout) segun necesidad.
     - Crear mini Card para la lista de chechouts
     - Crear boton de checkOut
     - Crear funcion totalizadora de precios de ambiente general, independiente de la logica del programa para poder ser reutilizada . UTILS
+## 07 - Buscadores por categoria y texto.
 - Creacion de imput y uso de las opciones del Navbar para filtrar la lista de productos por categoria y parcial del nombre.
-- Deploy:
+
+## 08 - Deploy:
     - en vite.config.js: introducir la base: base: ["https://GemmaClaverodelMoral.github.io/vola",] (vola es el nombre del repositorio en guthub)
     - En la linea de comandos: npm install --save-dev gh-pages
     - En los scripts de package.json: "deploy": "npm run build && gh-pages -d dist"
     - Ejecutamos el script en la linea de comandos: npm run deploy
 
+## 09
 - OJO: Quiero que el cursor valla despues que yo
 - OJO: Quiero que en Detail las fotos pasen de unas a otras con las flechas laterales.
 - OJO: Quiero que si pongo una lo¿upa en la foto se vea bastante grande con una lupa dentro de su cuadrito
@@ -52,3 +59,4 @@ Usando React, Vite y TailwanCSS
 - OJO: Falta desarrollar enlace a whapp con font awesome: npm install @fortawesome/fontawesome-free
 - OJO: No esta desarrollado: Crear el carrito de compras SideMenu
 - OJO: Los componentes de ShowProduct y CheckOut estan pisando el Grid en viewports de pocos pixeles.
+- OJO: Traer base de datos de VOlA completa con descripciones en ingles y precios reales

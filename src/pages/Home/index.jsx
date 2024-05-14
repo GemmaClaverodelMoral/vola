@@ -8,11 +8,19 @@ import { ProductDetail } from "../../Components/ProductDetail"
 const Home = () => {
   const context =useContext(ShoppingCartContext)
 
+  const renderTitle = () => { // Si hay algun filtro de categoria cambia el titulo global por la categoria
+    const pageTitle = '! Find your Favorite Product !'
+    if (context.searchByCategory !== 'All')
+      return context.searchByCategory
+    else
+      return pageTitle
+  }
+
   return ( 
   <Layout>
     <div>
       <div className='flex w-80  items-center justify-center relative cursor-auto '>
-          <h1 className='text-xl font-medium mb-4'>! Special Products !</h1>
+          <h1 className='text-xl font-medium mb-4'>{renderTitle()}</h1>
       </div>
       <input type='text' 
                   placeholder='Search your products'

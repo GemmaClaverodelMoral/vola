@@ -6,9 +6,24 @@ const Card = (data) => {
   const context = useContext(ShoppingCartContext)
 
   const showProduct = (producto) => {
-    context.closeCheckOutSideMenu()
-    context.openProductDetail()
-    context.setProductToShow(producto)
+    if (producto.categoria === 'Menu') { // Card de menu - Se hace serchByCategory
+      context.setSearchByCategory(producto.nombre.slice(0, -5))
+    }
+    else { // Card de producto - Se ejecuta ShowProduct
+      context.closeCheckOutSideMenu()
+      context.openProductDetail()
+      context.setProductToShow(producto)
+    }
+  }
+
+  const renderCategoria = (categoria) => { //Si es una card de Categoria cambia un poso el render
+    if (categoria === 'Menu') return ''
+    else return categoria
+  }
+
+  const renderPrecio = (categoria, precio) => { //Si es una card de Categoria cambia un poso el render
+    if (categoria === 'Menu') return ''
+    else return '$' + precio.toLocaleString('es-ES', {style: 'decimal', minimumFractionDigits: 0,}) 
   }
 
   const addCart = (event, producto) => {
@@ -54,7 +69,7 @@ const Card = (data) => {
       className='w-48 h-60 rounded-lg cursor-pointer'
       onClick={() => showProduct(data.data)}>
       <figure className='relative h-4/5'>
-        <span className='absolute bottom-0 left-0 bg-gray-200 rounded-lg text-black text-xs  m-2 px-1'>{data.data.categoria}</span>
+        <span className='absolute bottom-0 left-0 bg-gray-200 rounded-lg text-black text-xs  m-2 px-1'>{renderCategoria(data.data.categoria)}</span>
         <img 
           className='w-full object-cover rounded-lg shadow-lg' 
           src={data.data.imagenes[0]} 
@@ -64,7 +79,7 @@ const Card = (data) => {
       </figure>
       <p className='flex flex-col justify-between p-1'>
         <span className='flex text-xs font-light justify-end'>{data.data.nombre}</span>
-        <span className='flex text-md font-bold justify-end'>${data.data.precio.toLocaleString('es-ES', {style: 'decimal', minimumFractionDigits: 0,})}</span>
+        <span className='flex text-md font-bold justify-end'>{renderPrecio(data.data.categoria, data.data.precio)}</span>
       </p>
     </div>
   )
