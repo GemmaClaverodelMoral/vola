@@ -63,8 +63,8 @@ const Card = (data) => {
         {cardIconRender(data.data.id)}
       </figure>
       <p className='flex flex-col justify-between p-1'>
-        <span className='flex text-sm font-light justify-end'>{data.data.nombre}</span>
-        <span className='flex text-md font-medium justify-end'>${data.data.precio.toLocaleString('es-ES', {style: 'decimal', minimumFractionDigits: 0,})}</span>
+        <span className='flex text-xs font-light justify-end'>{data.data.nombre}</span>
+        <span className='flex text-md font-bold justify-end'>${data.data.precio.toLocaleString('es-ES', {style: 'decimal', minimumFractionDigits: 0,})}</span>
       </p>
     </div>
   )
