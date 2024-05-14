@@ -5,6 +5,8 @@
 -	Acceso a base de datos FireStore
 -	Filtros por título (input) y categorías (navbar) 
 -	Creacion y vistas de CheckOuts de Ordenes de compra.
+-	Creacion de buscador por nombre (parte de nombre) y por opciones del Navbar
+-	Deploy a github
 ## ¿Qué se usó?
 -	CSS, HTLM, JavaScrip, GiT y GitHub, manipulación del DOM, React, Vite con TailwindCSS
   
@@ -35,6 +37,11 @@
     - Crear boton de checkOut
     - Crear funcion totalizadora de precios de ambiente general, independiente de la logica del programa para poder ser reutilizada . UTILS
 - Creacion de imput y uso de las opciones del Navbar para filtrar la lista de productos por categoria y parcial del nombre.
+- Deploy:
+    - en vite.config.js: introducir la base: base: ["https://GemmaClaverodelMoral.github.io/vola",] (vola es el nombre del repositorio en guthub)
+    - En la linea de comandos: npm install --save-dev gh-pages
+    - En los scripts de package.json: "deploy": "npm run build && gh-pages -d dist"
+    - Ejecutamos el script en la linea de comandos: npm run deploy
 
 - OJO: Quiero que el cursor valla despues que yo
 - OJO: Quiero que en Detail las fotos pasen de unas a otras con las flechas laterales.
