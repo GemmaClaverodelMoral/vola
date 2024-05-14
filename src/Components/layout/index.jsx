@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'; // Importa PropTypes desde 'prop-types'
 
 const Layout = ({ children }) => {
  return (
-    <div className="flex flex-col mt-28 justify-items-start items-center">
+    <div className="flex flex-col mt-20 justify-items-start items-center">
         {children}
     </div>
  )

@@ -11,8 +11,9 @@ const ProductDetail = () => {
         const price = context.productToShow.precio.toLocaleString('es-ES', {style: 'decimal', minimumFractionDigits: 0,})
     return (
         <aside 
-            className={`${context.isProductDetailOpen ? 'flex' : 'hidden'} product-detail flex-col rounded-lg  border border-black right-2 fixed cursor-pointer overflow-y-scroll`}>
-            <div className='flex justify-between items-center p-6'>
+        className={
+            `${context.isProductDetailOpen ? 'flex' : 'hidden'} product-detail flex-col rounded-lg  border border-black right-2 fixed cursor-pointer overflow-y-scroll`}>
+            <div className='flex justify-between items-center p-4'>
                 <h2 className='font-medium text-xl'>Detail</h2>
                 <div>
                     <XMarkIcon 

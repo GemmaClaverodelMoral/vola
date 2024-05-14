@@ -10,24 +10,28 @@ const Home = () => {
 
   return ( 
   <Layout>
-      <div>
-        <input type='text' 
-                    placeholder='Search your products'
-                    className='rounded-lg mb-4 p-2 text-black border border-black w-80'
-                    onChange={(event) => context.setSearchByTitle(event.target.value)}
-        />
+    <div>
+      <div className='flex w-80  items-center justify-center relative cursor-auto '>
+          <h1 className='text-xl font-medium mb-4'>! Special Products !</h1>
       </div>
-        <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'> 
-          {
-            context.filteredProducts.length > 0 ? (
-            context.filteredProducts.map(producto => (
-              <Card key={producto.id} data={producto} />
-            ))) 
-            : (<p>No articles for your selection. Try with other filters.</p>)
-          }
-        </div>
-        <CheckOutSideMenu />
-        <ProductDetail />   
+      <input type='text' 
+                  placeholder='Search your products'
+                  autoFocus
+                  className='rounded-lg mb-4 p-2 text-black border border-black w-80'
+                  onChange={(event) => context.setSearchByTitle(event.target.value)}
+      />
+    </div>
+    <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'> 
+        {
+          context.filteredProducts.length > 0 ? (
+          context.filteredProducts.map(producto => (
+            <Card key={producto.id} data={producto} />
+          ))) 
+          : (<p>No articles for your selection. Try with other filters.</p>)
+        }
+      </div>
+      <CheckOutSideMenu />
+      <ProductDetail />   
   </Layout>
   )
 }

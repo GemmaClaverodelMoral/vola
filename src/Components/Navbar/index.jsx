@@ -9,7 +9,7 @@ const NavBar = () => {
     const context = useContext(ShoppingCartContext)
 
     return (
-        <nav className="flex justify-between items-center fixed top-0 z-10 py-4 px-8 text-sm font-light bg-black text-white cursor-auto overflow-x-hidden">
+        <nav className="flex justify-between items-center fixed top-0 z-10 p-4 text-sm font-light bg-black text-white cursor-auto overflow-x-hidden w-full">
             <ul className="flex items-center gap-3">
                 <li className="font-bold text-lg text-sky-500">
                     <NavLink 
