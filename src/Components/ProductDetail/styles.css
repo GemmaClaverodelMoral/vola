@@ -1,0 +1,6 @@
+/* Estilo que no esta en tailwindcss*/
+.product-detail { 
+    width: 360px;
+    height: calc(100vh - 20%);
+    top: 76px;
+}

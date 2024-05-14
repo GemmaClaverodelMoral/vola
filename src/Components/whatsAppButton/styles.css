@@ -1,0 +1,15 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    color: #fff; /* Color del icono */
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    text-decoration: none; /* Evita el subrayado del enlace */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Color de fondo al pasar el mouse */
+}
