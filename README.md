@@ -51,7 +51,13 @@ Usando React, Vite y TailwanCSS
     - En los scripts de package.json: "deploy": "npm run build && gh-pages -d dist"
     - Ejecutamos el script en la linea de comandos: npm run deploy
 
-## 09
+## 09 - Implementacion de SignIn/SignOut/Vista CreateAccount/Pagina Uptade Accout
+    - Uso de Conditional Rendering para autorizar o bloquear ciertas pestañas del Navbar segun si hay o no Login de usuarion 
+    - Uso de LocalStorage
+    - Renderizacion de vistas de create-account o log-in
+    - Uso de Form y Ref de React y Navigate de reactRoutes para bloquear o activar subpaginas/vistas
+
+## ISSUES
 - OJO: Quiero que el cursor valla despues que yo
 - OJO: Quiero que en Detail las fotos pasen de unas a otras con las flechas laterales.
 - OJO: Quiero que si pongo una lo¿upa en la foto se vea bastante grande con una lupa dentro de su cuadrito

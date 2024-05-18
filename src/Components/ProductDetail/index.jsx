@@ -12,7 +12,7 @@ const ProductDetail = () => {
     return (
         <aside 
         className={
-            `${context.isProductDetailOpen ? 'flex' : 'hidden'} product-detail flex-col rounded-lg  border border-black right-2 fixed cursor-pointer overflow-y-scroll bg-white`}>
+            `${context.isProductDetailOpen ? 'flex' : 'hidden'} product-detail flex-col rounded-lg  border border-black right-2 fixed cursor-pointer overflow-y-scroll bg-white/80 z-10`}>
             <div className='flex justify-between items-center p-4'>
                 <h2 className='font-medium text-xl'>Detail</h2>
                 <div>

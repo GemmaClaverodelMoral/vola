@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* no me gustan las fluctuaciones de los textos que se ajustan al scroll que no siempre esta presente.*/
+body {
+    overflow-y: scroll; 
+}

@@ -31,7 +31,7 @@ const CheckOutSideMenu = () => {
     return (
     <aside 
     className={
-        `${context.isCheckOutSideMenuOpen ? 'flex' : 'hidden'} my-order flex-col rounded-lg right-2 border border-black fixed cursor-pointer bg-white`}>
+        `${context.isCheckOutSideMenuOpen ? 'flex' : 'hidden'} my-order flex-col rounded-lg right-2 border border-black fixed cursor-pointer bg-white/80 z-10`}>
         <div className='m-2 flex justify-between items-center p-4'> {/* Icono de cierre del Carrito*/}
             <h2 className='font-medium text-xl'>My Order</h2>
             <div>

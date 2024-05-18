@@ -4,8 +4,6 @@ import { ShoppingCartContext } from '../../Context'
 import { Layout } from "../../Components/layout"
 import { OrdersCard } from '../../Components/OrdersCard';
 
-
-
 function MyOrders() {
   const context =useContext(ShoppingCartContext)
 

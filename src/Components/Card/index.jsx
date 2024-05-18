@@ -16,7 +16,7 @@ const Card = (data) => {
     }
   }
 
-  const renderCategoria = (categoria) => { //Si es una card de Categoria cambia un poso el render
+  const renderCategoria = (categoria) => { //Si es una card de Categoria cambia un poco el render
     if (categoria === 'Menu') return ''
     else return categoria
   }
@@ -34,15 +34,16 @@ const Card = (data) => {
     context.openCheckOutSideMenu()
   }
 
-  const nonShowDetail = (event) => { // en onclick de CheckIcon no debe hacer showProduct de los detalles
+  const nonShowDetail = (event) => { // modulo creado para que el onclick de CheckIcon que esta dentro de cada card de producto y sirve para adicionar el producto al carrito, no haga showProduct de los detalles del producto. El resto del rectangulo del cart si debe hacer showProduct cuando se hace clicken ese espacio.
     event.stopPropagation()
-    context.closeProductDetail()    
+    context.closeProductDetail()
     context.openCheckOutSideMenu()
-
   }
 
-  const cardIconRender = (id) => {
+  function cardIconRender(id) {
+    const isMenuCard = id[0] === '0' ? true : false
     const isInCart = context.cart.some(producto => producto.id === id)
+    if (!isMenuCard) {
       if (!isInCart) {
         return ( 
           <div 
@@ -62,6 +63,7 @@ const Card = (data) => {
           </div>
         )
       }
+    }
   }
 
   return (

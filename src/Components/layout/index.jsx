@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
 
 // Agrega la validación para el prop 'children'
 Layout.propTypes = {
-    children: PropTypes.node.isRequired // Requiere que 'children' sea un nodo React y esté presente
+    children: PropTypes.node // Requiere que 'children' sea un nodo React y esté presente
   };
 
 export {Layout}
