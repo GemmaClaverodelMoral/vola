@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { XMarkIcon } from '@heroicons/react/24/solid'
+import { XMarkIcon } from '@heroicons/react/16/solid'
 import { ShoppingCartContext } from '../../Context'
 import { OrderCard } from '../OrderCard'
 import { totalPrice } from '../../utils'
@@ -36,12 +36,12 @@ const CheckOutSideMenu = () => {
             <h2 className='font-medium text-xl'>My Order</h2>
             <div>
             <XMarkIcon 
-                className='size-10 text-black cursor-pointer p-2 hover:p-0'
+                className='size-10 text-black cursor-pointer p-2 font-bold hover:p-0 hover:font-bold hover:text-sky-500'
                 onClick={() => context.closeCheckOutSideMenu()}>
             </XMarkIcon>
             </div>
         </div> 
-        <div className='px-4 flex-1 overflow-y-scroll'>                               {/* Targetas agregadas al Carrito*/}
+        <div className='px-4 flex-1 overflow-y-scroll'> {/* Targetas agregadas al Carrito*/}
         {
             context.cart.map(producto => (
             <OrderCard 

@@ -9,7 +9,7 @@ const OrderCard = props => {
     renderXMarkIcon = 
       <XMarkIcon 
          onClick={() => handleDelete(id)}
-         className='h-10 w-10 text-black cursor-pointer p-2 hover:p-0'
+         className='h-10 w-10 text-black cursor-pointer p-2 hover:p-0 hover:text-sky-500 hover:font-bold'
       ></XMarkIcon>
   }
   const price = precio.toLocaleString('es-ES', {style: 'decimal', minimumFractionDigits: 0,})
@@ -24,7 +24,7 @@ const OrderCard = props => {
         />
       </figure>
       <div className='flex items-center justify-between w-60' >
-          <span className='font-light text-sm w-50'>
+          <span className='font-light text-sx w-50'>
              {nombre}
           </span>  
           <div className='flex items-center'>

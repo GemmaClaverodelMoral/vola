@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  //base: "https://GemmaClaverodelMoral.github.io/vola",
-  base:""
+  base: "https://GemmaClaverodelMoral.github.io/vola",
+  //base:""
 })
